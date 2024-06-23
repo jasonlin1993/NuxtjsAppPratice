@@ -1,11 +1,7 @@
 <template>
-  <div>
-    <h1>{{ title }} - {{ name }}</h1>
+  <div class="flex flex-col items-center">
+    <Icon name="logos:nuxt" size="240" />
+    <Icon class="h-24 w-24 text-yellow-400" name="heroicons:sun" />
+    <Icon name="NuxtIcon" size="128" />
   </div>
 </template>
-
-<script setup>
-const year = 2023;
-const title = `${year}  Nuxt.js 練習`;
-const name = 'Ryan';
-</script>
