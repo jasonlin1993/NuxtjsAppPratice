@@ -15,4 +15,8 @@ export const useCounterStore = defineStore('counter', {
   getters: {
     doubleCount: (state) => state.count * 2,
   },
+  persist: {
+    key: 'counter',
+    storage: persistedState.localStorage,
+  },
 });
